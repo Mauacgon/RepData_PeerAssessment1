@@ -326,8 +326,8 @@ ggplot(daypattern, aes(interval, daypattern)) +  geom_line()</code></pre>
 <li><strong>Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?</strong></li>
 </ul>
 <pre class="r"><code>maxdaypatt &lt;- max(daypattern$daypattern)
-daypattern[daypattern$daypattern == 206, 1]</code></pre>
-<pre><code>## numeric(0)</code></pre>
+daypattern[daypattern$daypattern == maxdaypatt, 1]</code></pre>
+<pre><code>## [1] 835</code></pre>
 </div>
 <div id="imputing-missing-values" class="section level1">
 <h1>Imputing missing values</h1>

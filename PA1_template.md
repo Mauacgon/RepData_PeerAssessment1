@@ -205,11 +205,11 @@ ggplot(daypattern, aes(interval, daypattern)) +  geom_line()
 
 ```r
 maxdaypatt <- max(daypattern$daypattern)
-daypattern[daypattern$daypattern == 206, 1]
+daypattern[daypattern$daypattern == maxdaypatt, 1]
 ```
 
 ```
-## numeric(0)
+## [1] 835
 ```
 
 #Imputing missing values
